@@ -5,10 +5,40 @@ body{
     align-content: center;
 }
 
-.books{
-    width: 280px;
-    height: 400px;
-    background-color: rebeccapurple;
+form{
+    height: 150px;
+}
+
+#forms{
+    display: grid;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 7fr 2fr;
+    width: 800px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+
+}
+
+#delete-book-container{
+    display: grid;
+    justify-content: center;
+}
+
+#delete-book-container>button{
+    width: 100px;
+    height: 50px;
     
 }
+
+
+#bookDelButton {
+}
+
 

@@ -28,11 +28,20 @@ function Book() {
         const books = document.querySelector(".books");
         const p = document.createElement("p");
         p.textContent = `Title: ${book.book} Author: ${book.author} Pages: ${book.numberOfPages}`;
+        const button = document.createElement('button')
+        button.setAttribute('class','allDeleteButtons')
+        button.setAttribute('id',`id: ${book.id}`)
+        button.textContent = 'Delete Book'
         books.appendChild(p);
+        books.appendChild(button);
+
+        // Remove Book Button 
+        button.addEventListener("click", () => {
+            
+        });
     });
 }
 
-// Remove Book Button 
 
 
 

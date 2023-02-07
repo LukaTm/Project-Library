@@ -9,12 +9,20 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="books"></div>
-    <form action="mybooks/path" method="post">
-		<label for="book">Book:</label>
-		<input type="text" name="book" id="book">
-		<button  type="submit">Submit</button>
-    </form>
-	<div id="output-box"></div>
+    <div class="books">
+		<form action="mybooks/path" method="post">
+			<label for="book">Book:</label>
+			<input type="text" name="book" id="book">
+
+			<label for="author">Author:</label>
+			<input type="text" name="author" id="author">
+
+			<label for="pages">Pages:</label>
+			<input type="text" name="pages" id="pages">
+			<button  type="submit">Submit</button>
+
+		</form>
+  	</div>
+	<button id="delete-book">Delete Book</button>
 </body>
 </html>

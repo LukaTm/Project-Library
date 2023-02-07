@@ -1,32 +1,38 @@
 let myLibrary = [];
 
+// Add Book's all info to myLibrary
 const form = document.querySelector("form");
-
 form.addEventListener("submit", function(event) {
   event.preventDefault();
 
   const book = document.querySelector("#book").value;
-  addBookToLibrary(book);
+  const author = document.querySelector("#author").value;
+  const pages = document.querySelector("#pages").value;
+  addBookToLibrary(book,author,pages);
 });
-
-
-function Book() {
-    myLibrary.forEach(function(book) {
-        const books = document.querySelector(".books");
-        const p = document.createElement("p");
-        p.textContent = `Title: ${book.book},`;
-        books.appendChild(p);
-});
-}
 
 function addBookToLibrary(book,author,numPages) {
     myLibrary.push ({
         'book': book,
         'author': author,
-        'numberOfPages':numPages
+        'numberOfPages':numPages,
+        'id':myLibrary.length
     })
+    Book()
 }
 
+// Display book on site
+function Book() {
+    let tuksa = [myLibrary[myLibrary.length - 1]]
+    tuksa.forEach(function(book) {
+        const books = document.querySelector(".books");
+        const p = document.createElement("p");
+        p.textContent = `Title: ${book.book} Author: ${book.author} Pages: ${book.numberOfPages}`;
+        books.appendChild(p);
+    });
+}
 
-addBookToLibrary('dasga','harry potos','150356')
-Book()
+// Remove Book Button 
+
+
+

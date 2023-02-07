@@ -14,16 +14,44 @@ form{
     justify-content: center;
 }
 
+#forms>button{
+    margin-top: 10px;
+    height: 35px;
+}
+
+#forms>button:hover{
+    cursor: pointer;
+}
+
+
+
+
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 7fr 2fr;
+    grid-template-rows: 1.5fr 1fr 1.5fr 1.5fr;
     width: 800px;
     background-color: red;
     color: white;
     font-weight: bold;
     font-family: monospace;
 
+}
+
+
+
+#status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#status>p{
+    font-size: 1.3em ;
+}
+
+#status>label{
+    margin-left: 10px;
 }
 
 #delete-book-container{

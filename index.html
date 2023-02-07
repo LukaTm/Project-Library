@@ -11,7 +11,7 @@
 <body>
 	<div class="container">
 		<div class="forms">
-			<form id="forms" action="mybooks/path" method="post">
+			<form class="formsClass" id="forms" action="mybooks/path" method="post">
 				<label for="book">Book:</label>
 				<input type="text" name="book" id="book">
 
@@ -20,9 +20,16 @@
 
 				<label for="pages">Pages:</label>
 				<input type="text" name="pages" id="pages">
-				<button  type="submit">Submit</button>
+				<button id="submitButton" type="submit">Submit</button>
 			</form>
 		</div>
+		<form class="formsClass" action="">
+			<div id="status">
+				<p>Read book?</p>
+				<label for="readStatusYes">yes</label>
+				<input type="checkbox" id="yes" name="readStatusYes" value="yes">
+			</div>
+		</form>
 		<div class="books">
 			
 		</div>

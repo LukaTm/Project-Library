@@ -29,7 +29,7 @@ form{
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 1fr 1.5fr 1.5fr;
+    grid-template-rows: 1.5fr 1fr 200px 1.5fr;
     width: 800px;
     background-color: red;
     color: white;
@@ -65,4 +65,8 @@ form{
     
 }
 
-
+#container #test{
+    display: flex;
+    height: 100px; 
+    width: 400px; 
+}
